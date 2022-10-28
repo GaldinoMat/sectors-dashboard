@@ -5,7 +5,7 @@ The global state is stored and dispatched by Redux, which impressed me since it 
 
 ## Front-end deployed via
 
-[Vercel]()
+[Vercel](https://sectors-dashboard-6troopbzi-galdinomat.vercel.app/)
 
 ## Back-end deployed via
 
