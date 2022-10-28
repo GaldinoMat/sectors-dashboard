@@ -9,7 +9,7 @@ function Role({ role }: RoleType) {
   const handleRoleDeletion = () => dispatch(deleteRole(role))
 
   return (
-    <span className='flex px-3 py-[7px] justify-center items-center gap-3 bg-white max-w-[121px]'>
+    <span className='flex  px-3 py-[7px] justify-center items-center gap-3 bg-blue rounded text-white max-w-[121px]'>
       <p className='text-xs'>{role}</p>
       <button type='button' onClick={() => handleRoleDeletion()}>
         <img src={DeleteRole} alt="delete role button" />

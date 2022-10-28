@@ -14,7 +14,7 @@ function Editbutton({ sector, roles }: EditButton) {
   }
 
   return (
-    <button onClick={() => handleEditRequest()} className='bg-gray-300 px-3 py-2'>Editar</button>
+    <button onClick={() => handleEditRequest()} className='bg-blue rounded text-white px-3 py-2'>Editar</button>
   )
 }
 

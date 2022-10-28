@@ -9,7 +9,7 @@ function SectorInfo(sector: Sector) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className='bg-gray-400'>
+    <div className='bg-modal-background rounded'>
       <div className={clsx('px-2 py-4 flex flex-col gap-5 transition-all duration-75', {
         "gap-5": isOpen,
         "gap-0": !isOpen

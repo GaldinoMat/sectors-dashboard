@@ -87,7 +87,7 @@ function SectorForm() {
 
 
   return (
-    <form onSubmit={handleSectorSubmit} className='bg-gray-300 p-6 flex flex-col gap-[14px] xl:min-w-[842px] xl:pr-[49px] h-screen xl:h-full'>
+    <form onSubmit={handleSectorSubmit} className='bg-white drop-shadow-header p-6 flex flex-col gap-[14px] xl:min-w-[842px] xl:pr-[49px] h-screen xl:h-full'>
       <section>
         {
           id === 0 ?
@@ -102,8 +102,8 @@ function SectorForm() {
       </section>
       <section className='flex flex-col gap-5'>
         <div className='flex flex-col gap-3 w-full'>
-          <label htmlFor="sector" className='text-sm'>Nome:</label>
-          <input type="text" name="sector" id="sector" className='bg-gray-400 text-white h-12 outline-gray-900' required
+          <label htmlFor="sector" className='text-sm font-medium'>Nome:</label>
+          <input type="text" name="sector" id="sector" className='bg-input-background pl-3 text-black h-12 outline-input-background' required
             value={id === 0 ? sectorName : modifiedSectorName}
             onChange={(e) => id === 0 ? setSectorName(e.target.value) : setModifiedSectorName(e.target.value)}
           />
@@ -118,7 +118,7 @@ function SectorForm() {
 
 function SaveFormButton() {
   return (
-    <button className='bg-gray-600 text-white py-2 max-w-[132px] h-12 w-full self-end mt-auto' type='submit'>Salvar</button>
+    <button className='bg-blue font-medium text-white py-2 max-w-[132px] h-12 w-full self-end mt-auto' type='submit'>Salvar</button>
   )
 }
 

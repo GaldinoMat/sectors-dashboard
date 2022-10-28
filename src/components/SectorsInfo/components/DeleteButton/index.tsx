@@ -12,7 +12,7 @@ function DeleteButton({ id }: DeleteId) {
     dispatch(loadSectors(data))
   }
   return (
-    <button onClick={() => handleDeletePost()} className='bg-gray-300 px-3 py-2'>Excluir</button>
+    <button onClick={() => handleDeletePost()} className='bg-blue rounded text-white px-3 py-2'>Excluir</button>
   )
 }
 

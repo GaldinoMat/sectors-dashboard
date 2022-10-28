@@ -16,7 +16,7 @@ function App() {
   const getSectors = useCallback(
     async () => {
       const { data } = await dispatch(fetchSectors())
-      
+
       dispatch(loadSectors(data))
     }, [dispatch]
   )
@@ -26,18 +26,20 @@ function App() {
   }, [getSectors])
 
   return (
-    <div className="p-4 md:max-w-xl xl:max-w-7xl xl:max-h-screen xl:px-0 flex flex-col mx-auto gap-5 relative">
-      <Header />
-      <WarningModal />
-      <main className={clsx('flex flex-col xl:flex-row gap-[18px] xl:h-screen',
-        {
-          "pointer-events-none": isWarning,
-          "pointer-events-auto": !isWarning
-        },
-      )}>
-        <SectorsInfo />
-        <SectorForm />
-      </main>
+    <div className='w-screen h-screen bg-background'>
+      <div className="p-4 md:max-w-xl xl:max-w-7xl xl:max-h-screen xl:px-0 flex flex-col mx-auto gap-5">
+        <Header />
+        <WarningModal />
+        <main className={clsx('flex flex-col xl:flex-row gap-[18px] xl:h-screen',
+          {
+            "pointer-events-none bg-[rgba(0, 0, 0, 0.5)]": isWarning,
+            "pointer-events-auto": !isWarning
+          },
+        )}>
+          <SectorsInfo />
+          <SectorForm />
+        </main>
+      </div>
     </div>
   )
 }

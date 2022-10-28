@@ -12,12 +12,12 @@ function SectorInfoCard({ isOpen, setIsOpen, ...sector }: InfoCard) {
     <>
       <div className='flex items-center justify-between'>
         <div>
-          <h3 className='text-lg'>{sectorName}</h3>
+          <h3 className='text-lg text-black'>{sectorName}</h3>
         </div>
         <ExpandButton isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
-      <div className={clsx('px-4 overflow-hidden flex flex-col items-center gap-3 xl:px-10', {
-        "max-h-full h-full": isOpen,
+      <div className={clsx('px-4 rounded overflow-hidden bg-modal-background flex flex-col items-center gap-3 xl:px-10', {
+        "max-h-full h-full p-4": isOpen,
         "max-h-0 h-0": !isOpen
       })}>
         <div className='flex flex-wrap justify-center gap-3'>
@@ -51,7 +51,7 @@ function ExpandButton({ isOpen, setIsOpen }: OpenCard) {
 
 function RoleSpan({ role }: RoleType) {
   return (
-    <span className='bg-gray-300 px-3 py-2'>{role}</span>
+    <span className='bg-white rounded text-faded-text px-3 py-2'>{role}</span>
   )
 }
 
