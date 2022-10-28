@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Sector and roles CRUD Dashboard
 
 This is a simple CRUD dashboard, with repeating validations and persistent data made possible via json-server, deployed via Heroku.
 The global state is stored and dispatched by Redux, which impressed me since it was my first time using it by how easy it made global data handling.
