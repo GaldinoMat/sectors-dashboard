@@ -9,4 +9,6 @@ The global state is stored and dispatched by Redux, which impressed me since it 
 
 ## Back-end deployed via
 
+[Server repo](https://github.com/GaldinoMat/sectors-dashboard-server/tree/main)
+
 [Heroku](https://sea-solutions-test-server.herokuapp.com/sectors)
