@@ -18,7 +18,7 @@ function RoleForm() {
       <div className='flex gap-3 w-full items-end'>
         <div className='flex flex-col gap-3 w-full'>
           <label htmlFor="role" className='text-sm font-medium'>Cargo(s):</label>
-          <input type="text" name="role" id="role" className='bg-input-background pl-3 text-black h-12 outline-input-background' value={role} onChange={(e) => setRole(e.target.value)} />
+          <input type="text" required name="role" id="role" className='bg-input-background pl-3 text-black h-12 outline-input-background' value={role} onChange={(e) => setRole(e.target.value)} />
         </div>
         <SubmitButton handleRoleSubmission={handleRoleSubmission} />
       </div>
